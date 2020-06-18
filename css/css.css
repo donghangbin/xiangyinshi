@@ -1,0 +1,94 @@
+*{margin: 0px; padding: 0px; box-sizing: border-box; } /* 规定两个并排的带边框的框} */
+.seervices-section{
+    padding: 60px 0px;
+    background-size: cover;
+    /* 把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。 */
+    background-image: url(../i/p.jpg);
+}
+.inner-width{
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+    /* 内容会被修剪，并且其余内容是不可见的 */
+    max-width: 1200px;
+    cursor: help;
+    /* 鼠标指上去的效果 */
+}
+.p{
+    color:#fff;
+    text-align: center;
+    font-size: 30px;
+}
+.border{
+    height: 2px;
+    width: 160px;
+    margin: 40px auto;
+    background: #82ccdd;
+    cursor: move;
+    /* 鼠标指上去的样子 */
+}
+.servicse-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* 规定灵活的项目在必要的时候拆行或拆列。 */
+    justify-content: center;
+    /* 项目位于容器的中心 */
+}
+.servicse-box{
+    color: #82ccdd;
+    padding: 10px;
+    cursor: wait;
+    /* 鼠标指上去的样子 */
+    max-width: 33.33%;
+    text-align: center;
+}
+.servicse-icon{
+    display: inline-block;
+    /* 可以让块级元素并排 */
+    width: 70px;
+    height: 70px;
+    color: #82CCDD;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    /* 上下边距div的边距 */
+    transform: rotate(45deg);
+    border: 3px solid #82ccdd;
+    transition: .3s  linear;
+}
+.servicse-icon i{
+    line-height: 70px;
+    /* 间距上下 */
+    transform: rotate(45deg);
+    /* 角度 */
+}
+.servicse-box:hover .servicse-icon{
+    color: #FFF;
+    background: #82CCDD;
+}
+.servicse-titel{
+    font-style: 20px;
+    font-weight: 800px;
+    margin-bottom: 10px;
+    /* 上下间距 */
+    text-transform: uppercase;
+    /* 字体大写 */
+}
+.servicse-desc{
+    font-style: 14px;
+}
+@media screen and (max-width:960px){
+    .servicse-box{
+        min-width: 45%;
+    }
+}
+@media screen and (max-width:768px){
+    .servicse-box{
+        min-width: 50%;
+    }  
+}
+@media screen and (max-width:480px){
+    .servicse-box{
+        min-width: 100%;
+    }
+}
